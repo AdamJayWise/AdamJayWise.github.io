@@ -4,9 +4,9 @@ pause
 
 pelican content -s publishconf.py
 
+python ghp-import.py output -b master
+
 git add *
 git commit -m "%DATE% %TIME%"
-
-python ghp-import.py output -b master
 
 git push
